@@ -1,0 +1,5 @@
+exercises
+filelist.txt
+fun.txt
+hello.txt
+testdirectory
