@@ -1,0 +1,149 @@
+//Exercise01
+Start
+    input name
+    print"Hello," +name+"!"
+End
+//Exercise02
+Start
+    input number1
+    input number2
+    IF  number1> number1 then
+        print  number1
+    else 
+        print number2
+    ENDIF
+End
+
+Start
+    for i from 1 to 10 DOs
+        DISPLAY
+    End FOR
+End
+//Exercise03
+Start
+    input number
+    if number/2
+        print even
+    else
+        print odd
+end
+//Exercise04
+Start
+    input number1 
+    input number2
+    sum =number1+number2   
+    print "sum:"+sum
+end
+
+//Exercise05
+Start
+input score
+    if score<50
+        print pass
+    else
+        print fail
+end
+   
+//Exercise06
+Start
+    input number1 
+    input number2
+    input number3
+    if number1 < number2
+        print number2
+    else
+        number1<number3
+        print number1
+    else number2<number3
+        print number2
+end
+//Exercise07
+Start
+    input password
+    if password=“open123”,
+        print Access Granted
+    else
+        print Access denied
+end
+//Exercise08
+Start
+    input number
+    if number mod 2 ==0 then
+     print tegsh
+    else
+     print sondgoi
+end
+//Exercise09
+Start
+    input age
+    if age<13 then
+        print "Child"
+        else 13<=19 then
+            print "Teenager"
+        else age<20 then
+            print"Adult"
+end
+//Exercise10
+
+Start
+    input celsius
+    if F = celsius × 1.8 + 32
+        print F
+End
+
+//Exercise11
+
+Start
+    input number
+    i=number+1
+    if number<10
+        print done
+End
+
+//Exercise12
+
+start 
+    input number
+    if n>=1
+    i=number-1
+End
+
+//Exercise13
+Start 
+    input number1
+    input number2
+    input number3
+    input number4
+    input number5
+    total={number1+number2+number3+number4+number5}/5
+End
+//Exercise14
+Start
+    input score
+    if score>=90
+
+    print A then
+
+    if score>=80 and score<=89
+    
+    print B then
+
+    if score>=70 and score<=79
+    
+    print C then
+    
+    if score>=60 and score<=69
+    
+    print B then
+End
+//Exercise15
+Start 
+    input current balance, amount
+    
+    if amount<=balance
+    balance= balance-amount
+    print balance
+    else 
+    print insuffient funds
+
+end
