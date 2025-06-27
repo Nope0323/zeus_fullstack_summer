@@ -1,0 +1,86 @@
+start 
+input dep
+count0 = 0
+count1 = 0
+count2 = 0
+count3 = 0
+count4 = 0
+count5 = 0
+
+    if dep == 0 then
+        count0 = count0+1
+    ELSE 
+        if dep== 1 then
+            count1 = count1+ 1
+        ELSE
+            if dep == 2 then
+            count2 = count2+1
+            ELSE 
+                if dep== 3 then
+                    count3 = count1+ 3
+                    if dep == 4 then
+                    count4 = count4+1
+                ELSE 
+                    if dep== 5 then
+                        count5 = count5+ 1
+
+                    end IF
+                end IF
+            end IF
+        end IF 
+    end IF
+End
+
+start 
+input dep[6]= 0,0,0,0,0,0
+
+    if dep == 0 then
+        count[0] = count[0]+1
+    ELSE 
+        if dep== 1 then
+            count[1] = count[1]+ 1
+        ELSE
+            if dep == 2 then
+            count[2] = count[2]+1
+            ELSE 
+                if dep== 3 then
+                    count[3] = count[3]+ 1
+                    if dep == 4 then
+                    count[4] = count[4]+1
+                ELSE 
+                    if dep== 5 then
+                        count[5] = count[5]+ 1
+
+                    end IF
+                end IF
+            end IF
+        end IF 
+    end IF                  
+end
+
+start 
+input dep[6]= 0,0,0,0,0,0
+
+    if dep == 0 then
+        count[dep] = count[dep]+1
+    ELSE 
+        if dep== 1 then
+            count[dep] = count[dep]+ 1
+        ELSE
+            if dep == 2 then
+            count[dep] = count[dep]+1
+            ELSE 
+                if dep== 3 then
+                    count[dep] = count[dep]+ 1
+                    if dep == 4 then
+                    count[dep] = count[dep]+1
+                ELSE 
+                    if dep== 5 then
+                        count[dep] = count[dep]+ 1
+
+                    end IF
+                end IF
+            end IF
+        end IF 
+    end IF                  
+end
