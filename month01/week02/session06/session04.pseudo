@@ -84,3 +84,18 @@ input dep[6]= 0,0,0,0,0,0
         end IF 
     end IF                  
 end
+
+start 
+    count dep[6]= 0,0,0,0,0,0
+    input dep
+    while not eof then
+        count[dep]= count[dep]=1
+        input dep
+    ENDWILE
+    dep= 0
+    while dep<
+    then
+    Display 
+
+
+end
