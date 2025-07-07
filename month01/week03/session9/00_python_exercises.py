@@ -106,3 +106,28 @@ quote = ("i believe humankind that is fait of humanity")
 print(len(quote))
 print(quote[0],quote[-1])
 print(quote[0:4])
+
+greeting="Hello "
+
+morning ="World"
+
+combine= greeting+morning
+
+print (combine)
+
+uppercase_quote = quote.upper()
+
+print(uppercase_quote)
+
+count = quote.count("a")
+print(count)
+
+quote = quote.replace("humanity", "journey")
+
+print (quote)
+
+words = quote.split()
+print(words)
+
+start_with_the = quote.startswith("The")
+print(start_with_the)
