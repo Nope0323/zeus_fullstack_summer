@@ -10,9 +10,16 @@ def circle(x, y, w, color):
     turtle.goto(x, y)
     turtle.dot(w, color)
 
+    if color == "purple":
+        color = "black"
     if color == "red":
-        color = "orange"
-    else: color = "yellow"
+        color=="purple"
+    if  color=="red":
+        color=="pink"
+    if  color=="blue":
+        color=="dark blue"
+    else: 
+        color = "purple"
         
         
     # Recursive call
@@ -20,9 +27,10 @@ def circle(x, y, w, color):
         circle(x , y , w -40, color)
 
 
-for l in range(0,600):
-    x= random.randint(-600,600)
-    y= random.randint(-600,600)
-    circle(x, y, 200, 'red')
+
+    
+circle(0, 0, 200, 'red')
+
+turtle.done()
 
 turtle.done()
