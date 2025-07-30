@@ -76,6 +76,7 @@ print(get_first_element([]))
 def power(base, exponent):
     return base ** exponent
 
+#Exersice08
 # Test the function
 print(power(2, 3))  # Output: 8 (2 * 2 * 2)
 print(power(5, 2))  # Output: 25 (5 * 5)
