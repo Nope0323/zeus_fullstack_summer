@@ -12,18 +12,18 @@ def circle(x, y, w, color):
 
     if color == "purple":
         color = "black"
-    if color == "red":
+    elif color == "red":
         color=="purple"
-    if  color=="red":
+    elif  color=="red":
         color=="pink"
-    if  color=="blue":
+    elif  color=="blue":
         color=="dark blue"
     else: 
         color = "purple"
         
         
     # Recursive call
-    if w > 40:
+    if w > 10:
         circle(x , y , w -40, color)
 
 
