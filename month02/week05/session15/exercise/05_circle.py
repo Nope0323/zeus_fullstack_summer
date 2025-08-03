@@ -2,35 +2,22 @@ import turtle
 import random
 
 turtle.speed(0)
-turtle.penup()
 turtle.hideturtle()
+turtle.penup()
+turtle.colormode(255)  
 
+def circle(x, y, w):
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color = (r, g, b)
     
-def circle(x, y, w, color):
     turtle.goto(x, y)
     turtle.dot(w, color)
-
-    if color == "purple":
-        color = "black"
-    elif color == "red":
-        color=="purple"
-    elif  color=="red":
-        color=="pink"
-    elif  color=="blue":
-        color=="dark blue"
-    else: 
-        color = "purple"
-        
-        
-    # Recursive call
-    if w > 10:
-        circle(x , y , w -40, color)
-
-
-
     
-circle(0, 0, 200, 'red')
+    if w > 40:
+        circle(x, y, w - 10)
 
-turtle.done()
+circle(0, 0, 400)
 
 turtle.done()
