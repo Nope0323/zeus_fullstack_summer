@@ -11,4 +11,11 @@ print(welcome_message)
 code= input('code:')
 code = int(code)
 
-def caesar_cipher:
+def caesar_cipher(text, key,direction):
+    if direction=='decrypt':
+        key*=-1
+    result=''
+
+    for char in text:
+        if char.isalpha():
+            pass
