@@ -46,3 +46,37 @@ INSERT INTO projects (project_id, project_name, lead_employee_id) VALUES
 select e.last_name, e.first_name, d.department_id  
 from  employees e  
 inner join departments d     ON d.department_id  = e.department_id ;
+
+select p.project_name , e.first_name , e.last_name  
+from projects p 
+inner join employees e  on p.lead_employee_id = e.employee_id 
+
+--Left join
+select e.last_name, e.first_name , d. department_id 
+from departments d
+left join employees e  on e.department_id = d.department_id ;
+
+
+select p.project_name  , p.lead_employee_id, e.last_name , e.first_name  
+from projects p 
+left join employees e  on p.lead_employee_id =e.employee_id ;
+
+--rigth join
+select d.department_name , e.first_name, e.last_name, d.department_id  
+from  employees e 
+right join departments d  ON d.department_id= e.department_id ;
+
+select e.first_name, e.last_name, p.project_name
+from projects p
+right join employees e ON e.employee_id = p.lead_employee_id ;
+
+select e.first_name, e.last_name, d.department_name  from departments d
+full join employees e on d.department_id  = e.employee_id ;
+
+
+select e.first_name , e.last_name    ,p.project_name  from projects p 
+full join employees e  on p.lead_employee_id =e.employee_id ;
+
+select * from  projects p ;
+select * from  employees e ;
+

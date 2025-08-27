@@ -27,12 +27,12 @@ def save_score_to_db(player_name,final_score):
         print("Connecting to the PostgreSQL database to save score...")
         conn= psycopg2.connect(**DB_CONFIG)
         cur= conn.cursor
-        
-        cur.execute("SELECT id, ovog_ner,email,utas FROM students")
+        sql1 = "SELECT id, ovog_ner,email,utas FROM students"
+        cur.execute(sql1)
 
-        sql= INSERT 
+        sql_insert = "INSERT " 
 
-        cur.execute(sql,(player_name, final_score))
+        cur.execute(sql_insert,(player_name, final_score))
         conn.commit()
         print(f" Score for {player_name}({final_score}) saved successfully")
         cur.close()
