@@ -48,38 +48,38 @@ def save_score_to_db(player_name,final_score):
         if conn is not None:
             conn.close()
 
-def get_high_score_from_db():
-    """Connects to the DB and retrieves the all-time high score."""
-    conn = None
-    high_score = 0 # Default high score is 0
-    try:
-        print("Fetching high score from the database...")
-        conn = psycopg2.connect(
-            dbname = "turtle_db",
-            user= "postgres",
-            password= "",
-            host= "localhost",
-            port= "5432"
-        )
-        cur = conn.cursor()
-        # TODO - SQL SELECT statement to get the maximum score
-        # 1. SQL MAX Aggregate function ашиглах эсвэл
-        sql1= SELECT MAX(score) AS max_score FROM table_name;
-        # 2. SQL Order By ашиглах
-        # Fetch the result
-        # TODO - fetchone ашиглан үр дүнг авах
-        # The result will be (None,) if the table is empty
-        if result and result[0] is not None:
-        high_score = result[0]
-        print(f"🏆 All-time high score is: {high_score}")
-        cur.close()
-        except (Exception, psycopg2.DatabaseError) as error:
-        print(f"❌ Error while fetching high score: {error}")
-        finally:
-            if conn is not None:
-                conn.close()
-                print("Database connection closed.")
-        return high_score
+# def get_high_score_from_db():
+#     """Connects to the DB and retrieves the all-time high score."""
+#     conn = None
+#     high_score = 0 # Default high score is 0
+#     try:
+#         print("Fetching high score from the database...")
+#         conn = psycopg2.connect(
+#             dbname = "turtle_db",
+#             user= "postgres",
+#             password= "",
+#             host= "localhost",
+#             port= "5432"
+#         )
+#         cur = conn.cursor()
+#         # TODO - SQL SELECT statement to get the maximum score
+#         # 1. SQL MAX Aggregate function ашиглах эсвэл
+#         sql1= SELECT MAX(score) AS max_score FROM table_name;
+#         # 2. SQL Order By ашиглах
+#         # Fetch the result
+#         # TODO - fetchone ашиглан үр дүнг авах
+#         # The result will be (None,) if the table is empty
+#         if result and result[0] is not None:
+#         high_score = result[0]
+#         print(f"🏆 All-time high score is: {high_score}")
+#         cur.close()
+#         except (Exception, psycopg2.DatabaseError) as error:
+#         print(f"❌ Error while fetching high score: {error}")
+#         finally:
+#             if conn is not None:
+#                 conn.close()
+#                 print("Database connection closed.")
+#         return high_score
 
 #       def move_up():
 #             y = player.ycor()
