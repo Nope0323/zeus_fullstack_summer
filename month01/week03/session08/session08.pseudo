@@ -1,0 +1,13 @@
+start
+    input A
+    if (1<A and A<100) 
+        if X==A
+            "bayr hurgii"
+        else
+            if A<X
+            het baga
+            else
+            het if
+        endif
+    end
+end

@@ -1,0 +1,3 @@
+this is fun
+try bash
+bash is cool
