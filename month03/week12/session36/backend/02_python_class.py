@@ -119,15 +119,15 @@ print(f"{item2.name}-ийн нийт үнэ: {item2.get_total_price()}")
 
 class Animal:
     # TODO
-    def speak:
-    print ("hh")
+    def speak():
+        print("hh")
 class Dog(Animal):
     # TODO
-    def dog_speak:
+    def dog_speak():
         print("Hav Hav!")
 class Cat(Animal):
     # TODO
-    def cat_speak:
+    def cat_speak():
         print("Miyav!")
 
     # Классыг ашиглах
