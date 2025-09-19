@@ -86,7 +86,7 @@ class ActorApp:
             return
             
         # TODO
-        insert_actor="""insert into actor (first_name, last_name)VALUES('%d','%d')"""
+        query="""insert into actor (first_name, last_name)VALUES('%d','%d')"""
         if self.db.execute_query(query, (first_name, last_name)):
             print(f"'{first_name} {last_name}' нэртэй жүжигчнийг амжилттай нэмлээ.")
         input("\nБуцахын тулд Enter дарна уу...")
