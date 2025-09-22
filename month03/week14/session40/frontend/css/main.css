@@ -1,0 +1,24 @@
+/*tagselector*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 1440px;
+    height: 100vh;
+    background-color: silver;
+    margin: 0 auto;
+
+}
+h2{
+    text-align: center;
+}
+section{
+    margin: 0 auto;
+    background-color: violet;
+
+}

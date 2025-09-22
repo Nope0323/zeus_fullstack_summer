@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/case01.css">
+    <link rel="stylesheet" href="./css/case02.css">
+    <link rel="stylesheet" href="./css/case03.css">
+    <link rel="stylesheet" href="./css/case04.css">
+    <link rel="stylesheet" href="./css/case05.css">
+    <link rel="stylesheet" href="./css/case06.css">
+    <link rel="stylesheet" href="./css/case07.css">
+    <link rel="stylesheet" href="./css/case09.css">
+    <link rel="stylesheet" href="./css/case10.css">
+</head>
+<body>
+    <h1> CSS Cascade</h1>
+    <main>
+        
+        <h2> Element Selector vs . Class Selector</h2>
+        <section>
+            <p class="highlight"> This is a paragraph with class "highlight". </p>
+        </section>
+        <section>
+            <p> This is a paragraph without class. </p>
+        </section>
+        <p class="highlight" id="unique" >This is another paragraph with class "highlight". </p>
+        <h2> Multiple Class vs. Single Class</h2>
+        <section>
+            <div class="box urgent" id="main-box"> content </div>
+        </section>
+        <h2> Descendant Selector vs. Class Selector</h2>
+        <section>
+            <div class="container">
+                <p > ~Text inside </p>
+            </div>
+        </section>
+        <h2> Pseudo-class vs. Element </h2>
+        <section>
+            <a  href="#"> This is a link </a>
+                <p > ~Text inside </p>
+        </section>
+        <h2> Attribute Selector vs. Class Selector
+        </h2>
+        <selection>
+            <button class="action" data_type="submit">Click</button>
+        </selection>
+        <h2>inline Style</h2>
+        <p id="intro" style="color: orange;"> This is a paragraph with inline style </p>
+        </section>
+        <!-- ex09 -->
+        <h2> !important declaration</h2>
+        <section>
+            <p id="intro"> This is a paragraph with id "intro" </p> 
+        </section>
+        <!-- ex10 -->
+        <h2> !important Overriding an inline Style</h2>
+        <section>
+            <p  style="color: orange "> This is a paragraph with id "intro" </p>
+        </section>
+    </main>
+
+</body>
+</html>

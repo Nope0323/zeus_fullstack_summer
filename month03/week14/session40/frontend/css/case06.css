@@ -1,0 +1,6 @@
+.action{
+    background-color: blue;
+}
+[data_type="submit"]{
+    background-color: green;
+}

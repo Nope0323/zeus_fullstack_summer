@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 1440px;
+    height: 100vh;
+
+}
+
+/* navigation bar Selection */
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 85px;
+    background-color: #fff;
+    box-shadow: 0 59px 16px 0 rgba(8, 128, 0, 0.00), 0 38px 15px 0 rgba(8, 128, 0, 0.01), 0 21px 13px 0 rgba(8, 128, 0, 0.02), 0 9px 9px 0 rgba(8, 128, 0, 0.04), 0 2px 5px 0 rgba(8, 128, 0, 0.04);}
+
+.navbar-left-side{
+    max-width: 217px;
+    height: 85px;
+    margin: auto;
+
+}
+
+.navbar-left-side .logo{
+    color: #088000;
+    font-family: montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}   
+.navbar-left-side #portfolio{
+    color: black;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.navbar-rigth-side{
+    display: flex;
+    width:675px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 30px;
+}
+
+ul li {
+    list-style: none;
+    color: chartreuse;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+ul li a{
+    text-dec
+}

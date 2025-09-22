@@ -142,3 +142,7 @@ input_triangle_tal_a= float(input_triangle_tal_a)
 input_triangle =input_triangle_tal_a * input_triangle_tal_b
 input_triangle = float(input_triangle)
 print(f"Энэхүү гурвалжны талбай нь: {input_triangle}")
+#ex25
+too = float(input("Нэг бутархай тоо оруулна уу: "))
+hariu = too / 2
+print(f"{too} тоог 2-т хуваахад {hariu} гарна.")
