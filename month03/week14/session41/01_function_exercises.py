@@ -149,8 +149,12 @@ def fizzbuzz_check(number):
 for i in range(1, 21):
     print(fizzbuzz_check(i))
 
-    def countdown(n):
+#ex18
+def countdown(n):
     """n-ээс 1 хүртэл ухраан тоолдог рекурсив функц."""
-# TODO
-countdown(n - 1) # Өөрийгөө дахин дуудах
+    # TODO
+    if n<= 0:
+        return
+    print (n)
+    countdown(n - 1) 
 countdown(5)
