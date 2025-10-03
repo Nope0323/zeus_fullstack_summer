@@ -26,38 +26,34 @@ nav{
     box-shadow: 0 59px 16px 0 rgba(8, 128, 0, 0.00), 0 38px 15px 0 rgba(8, 128, 0, 0.01), 0 21px 13px 0 rgba(8, 128, 0, 0.02), 0 9px 9px 0 rgba(8, 128, 0, 0.04), 0 2px 5px 0 rgba(8, 128, 0, 0.04);}
 
 .navbar-left-side{
-    max-width: 217px;
-    height: 85px;
-    margin: auto;
-
-}
-
-.navbar-left-side .logo{
-    color: #088000;
+    color: chartreuse;
     font-family: montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }   
-.navbar-left-side #portfolio{
+
+.navbar-left-side .title{
     color: black;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }
 
-.navbar-rigth-side{
+.navbar-right-side ul {
     display: flex;
-    width:675px;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    flex-shrink: 30px;
+    justify-content: flex;
+    width: 675px;
+    gap: 32px;
+   
+    padding-bottom: 8px;
 }
+
 
 ul li {
     list-style: none;
@@ -67,5 +63,5 @@ ul li {
 }
 
 ul li a{
-    text-dec
+    text-decoration: none;
 }

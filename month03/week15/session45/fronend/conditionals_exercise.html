@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            padding: 2rem; 
+            line-height: 1,6;
+        }
+        .container{
+            max-width:4000px ;
+            margin:auto;
+            padding: 2rem;
+            border:1px solid #ddd;
+            border-radius: 8px;
+
+        }
+       
+        #result-paragraph{
+            margin-top: 1rem; 
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .success{
+            color: green;
+        }
+        .error{
+            color: red;
+        }       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="page-title">JS Con</h1>
+    </div>
+    <script>
+        const pageTitle = document.getElementById('page-title');
+        const resultParagraph = document.getElementById('result-paragraph');
+
+        const userName = 'Dorj'
+
+        const isAdmin = false;
+
+        if(isAdmin==true){
+            pageTitle.textContent = 'Admin Dashboard';
+            resultParagraph.textContent = `Welcome,User${userName}`;
+            resultParagraph.classList.add('success');
+        } else {
+            pageTitle.textContent = 'User Dashboard';
+            resultParagraph.textContent = `Welcomme, User ${userName}`;
+            resultParagraph.classList.add('error');
+        }
+    </script>
+</body>
+</html>

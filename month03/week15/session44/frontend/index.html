@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive DOM (DOCUMENT OBJECT MODEL)</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <div class="card">
+        
+        <div class="header">
+            <h1 id="main-title">
+                My To-Do List
+            </h1>
+            <p id="sub-title">
+                Add New Task
+            </p>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Enter Input">
+            <button id="add-button">
+                Add
+            </button>
+        </div>
+
+        <div>
+            <h2>Tasks</h2>
+            <ul id="tasks">
+                <li class="todo-item">First Task</li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        document.writeln('<h1>Hello JavaScript</h1>');
+        //python variable
+        //x=5
+        var x= 5;
+        //python print
+        console.log(x);
+        //print your name
+        console.log(name);
+        console.log(24);
+        //javascript data types
+        //camelCase
+        //snake_case
+        let buhelToo = 10;
+        let butarhaiToo = 3.14;
+        let thisIsText = "Hello World";
+
+        //change value
+        buhelToo = 15;
+        console.log(`buhelToo ${buhelToo}`); // template literal Text ${}
+
+        // oorchilj boldog ui
+        PI= 3.45;
+        console.log(PI);
+        const maintitle = document.getElementById('main-title');
+        console.log(maintitle);
+        const subtitle = document.getElementById('sub-title');
+        console.log(subtitle);
+        const addButton = document.getElementById('add-button');
+        console.log(addButton);
+        const mainTitle = document.getElementById('main-title');
+        //change content
+        mainTitle.textContent = "Changed Main Title";
+        subtitle.textContent = "Changed Sub Title";
+
+        
+        // change color
+        mainTitle.style.color = "red"
+        //FontSize, background color
+        mainTitle.style.fontSize = "50px";
+        mainTitle.style.backgroundColor = "purple";
+        //subtitle-ийн өнгө будаг стайл
+        subtitle.style.color = "blue"; 
+        subtitle.style.backgroundColor = "yellow";
+        subtitle.style.fontSize = "30px";
+        //tasks id
+        const tasks = document.getElementById('tasks');
+        const secondTask = document.createElement('li');
+        secondTask.className = "todo-item";
+        secondTask.textContent = "Second Task";
+        //
+        tasks.appendChild(secondTask);
+        // main title dotor shineer h3 element uusgej child aar oruul;
+        const h3Element = document.createElement('h3'); 
+        h3Element.className = "todo-item"
+        h3Element.textContent = "this is child of main title"
+        h3Element.style.color = "green"
+         h3Element.style.fontSize = "20px"
+        mainTitle.appendChild(h3Element);
+    </script>
+</body>
+</html>
