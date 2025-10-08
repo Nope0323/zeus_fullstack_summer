@@ -158,3 +158,15 @@ def countdown(n):
     print (n)
     countdown(n - 1) 
 countdown(5)
+#ex20
+def is_prime(num):
+    """Тоог анхны тоо мөн эсэхийг шалгана."""
+    if num < 2:
+        return False
+    for i in range(2, num // 2 + 1):
+        if num % i == 0:
+            return False
+    return True
+
+print(f"13 анхны тоо мөн үү? {is_prime(13)}")
+print(f"12 анхны тоо мөн үү? {is_prime(12)}")
