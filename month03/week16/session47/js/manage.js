@@ -58,7 +58,7 @@ input =""
 do {
     input = prompt("ug oruulna uu: ")
 
-}while(input !== "exit");
+}while(input == "exit");
 
 //*ex10
 for(let n=1; n<=10; n++){
@@ -73,4 +73,118 @@ function calculateSquare(a){
 }
 calculateSquare(5)
 
-//*ex12
+//ex12
+
+function isEven(num) {
+    return num % 2 === 0;
+}
+console.log(isEven(15))
+
+//ex12.1
+input = Number(prompt("Тоогоо оруулна уу: "));
+
+function isItEven(num) {
+  return num % 2 === 0;
+}
+
+console.log(isItEven(input));
+
+//ex13
+//  if b != 0:
+//            return(a/b)
+//        else:
+//            print("0 ээс ялгаатай")
+function divide (a,b){
+    try{
+        if (b===0){
+            throw new Error("0-д хувааж болохгүй!");
+        }
+        return a/b;
+    }catch(err){
+        console.log("⚠️ Алдаа:", err.message);
+        return null;
+    }
+}
+console.log(divide(10,2));
+console.log(divide(10,0));
+
+//ex14
+function printPattern(n) {
+  for (let i = 1; i <= n; i++) {     
+    let line = "";                  
+    for (let j = 1; j <= i; j++) {   
+      line += "*";                   
+    }
+    console.log(line);              
+  }
+}
+console.log(printPattern(5))
+
+//ex15
+console.log("ex15");
+function countBackwards(a,b){
+    if (a>b){
+        for (let i=0; i<=(a-b); i++){
+            console.log(a-i);
+        }
+      
+    } else if (b>a){
+         for (let i=0; i<=(b-a); i++){
+            console.log(b-i);
+        }
+    }
+    
+}
+console.log(countBackwards(5,12))
+
+//ex16
+console.log("ex16");
+function convertTemp(celsius){
+    let n = celsius; // celsius ийн утгыг n оноож байна
+    n=n+32;
+    return n;
+
+}
+console.log(convertTemp(23))
+
+//ex17
+console.log("ex17");
+function sumDigits(n){
+    let sum = 0 ;
+    while(n !==0 ){
+        let last = n%10;
+        sum+=last;
+        n= Math.floor(n/10);
+    
+    }
+    return sum;
+}
+
+console.log(sumDigits(123)); 
+
+//ex18
+
+//def is_prime(num):
+//    """Тоог анхны тоо мөн эсэхийг шалгана."""
+//    if num < 2:
+//        return False
+//    for i in range(2, num // 2 + 1):
+//        if num % i == 0:
+//            return False
+//    return True
+
+console.log("ex18");
+function isPrime(n){
+    if (n<2){
+    return false
+    }
+    for (let i = 2; i <= Math.floor(n / 2); i++) {
+    if (n %i ==0){
+        return false;
+    }
+    }
+     return true
+}
+console.log(isPrime(13))
+
+console.log("ex19")

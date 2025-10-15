@@ -170,3 +170,23 @@ def is_prime(num):
 
 print(f"13 анхны тоо мөн үү? {is_prime(13)}")
 print(f"12 анхны тоо мөн үү? {is_prime(12)}")
+
+#ex25
+def calculate(a, b, operator):
+    """Нэгдсэн тооны машин функц."""
+    if operator == '+':
+    # TODO
+        return(a+b)
+    elif operator=='-':
+        return(a-b)
+    elif operator=='*':
+        return(a*b)
+    else :
+        if b != 0:
+            return(a/b)
+        else:
+            print("0 ээс ялгаатай")
+            
+print(f"100 / 5 = {calculate(100, 5, '/')}")#20
+print(f"30 * 3 = {calculate(30, 3, '*')}")#90
+print(f"10 / 0 = {calculate(10, 0, '/')}")#0
