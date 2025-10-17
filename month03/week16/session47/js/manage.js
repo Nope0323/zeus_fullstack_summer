@@ -183,8 +183,32 @@ function isPrime(n){
         return false;
     }
     }
-     return true
+     return true;
 }
 console.log(isPrime(13))
 
 console.log("ex19")
+function factorial(n){
+    if(n<=0){
+        return 0;
+    }
+    let list=1;
+    for( let i=1; i<=n; i++){
+    list=list*i
+    }
+    return list;
+}
+
+console.log(factorial(5))
+
+console.log("ex20");
+
+function fibonacci(n) {
+  let fnum = [0, 1]; 
+  for (let i = 2; i <= n; i++) {
+    fnum[i] = fnum[i - 1] + fnum[i - 2];
+  }
+  return fnum;
+}
+
+console.log(fibonacci(5));

@@ -25,6 +25,16 @@ nav{
     background-color: #fff;
     box-shadow: 0 59px 16px 0 rgba(8, 128, 0, 0.00), 0 38px 15px 0 rgba(8, 128, 0, 0.01), 0 21px 13px 0 rgba(8, 128, 0, 0.02), 0 9px 9px 0 rgba(8, 128, 0, 0.04), 0 2px 5px 0 rgba(8, 128, 0, 0.04);}
 
+ul li {
+    list-style: none;
+    color: chartreuse;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+}
 .navbar-left-side{
     color: chartreuse;
     font-family: montserrat;
@@ -47,21 +57,54 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex;
+    justify-content: flex-start;
     width: 675px;
     gap: 32px;
    
     padding-bottom: 8px;
 }
 
-
-ul li {
-    list-style: none;
-    color: chartreuse;
-    font-family: Montserrat;
-    font-size: 20px;
+/* creativity section */
+.creativity-section{
+    margin-top: 100px;
 }
 
-ul li a{
+.creativity-section .right-section img{ 
+    width: 300px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.creativity-section #creative {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 64px;
+    max-width: 429px;
+}
+
+.creativity-section #expectation {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 20px;
+    color: #0000;
+    max-width: 312px;
+    margin-top: 32px;
+}
+
+.creativity-section a{
+    display: inline-block;
+    margin-top: 70px;
+    background: #75c310;
+    color: #fff;
     text-decoration: none;
+    width: 220px;
+    height: 54px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 54px;
+    text-align: center;
+    cursor: pointer;
 }
