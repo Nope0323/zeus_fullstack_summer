@@ -61,6 +61,7 @@ def power(base, exponent):
 print(f"2-ын 3 зэрэг: {power(2, 3)}")
 print(f"5-ын 2 зэрэг: {power(5, 2)}")
 
+#ex08
 def get_first_char(word):
     """Үгний эхний үсгийг буцаана."""
     # first=word[0]
@@ -68,6 +69,7 @@ def get_first_char(word):
 # TODO
 print(f"'Python' гэдэг үгний эхний үсэг: {get_first_char('Python')}")
 
+#ex09
 def greet_country(name, country="Монгол"):
     """Хэрэглэгчийн нэр, улсыг авч мэндчилнэ."""
     print(name,country)
@@ -133,6 +135,7 @@ def celsius_to_fahrenheit(celsius):
 c = 25
 f = celsius_to_fahrenheit(c)
 print(f"{c}°C нь {f}°F-тэй тэнцүү.")
+
 #ex17
 def fizzbuzz_check(number):
     # TODO
@@ -145,7 +148,6 @@ def fizzbuzz_check(number):
     else :
         return number
     
-
 for i in range(1, 21):
     print(fizzbuzz_check(i))
 
@@ -158,6 +160,21 @@ def countdown(n):
     print (n)
     countdown(n - 1) 
 countdown(5)
+
+#ex19
+# ...existing code...
+def factorial_recursive(n):
+    """n-ийн факториалыг рекурсив аргаар бодно."""
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    if n <= 1:              # Суурь нөхцөл
+        return 1
+    return n * factorial_recursive(n - 1)
+
+
+
+print(f"5-ын факториал: {factorial_recursive(5)}")
+
 #ex20
 def is_prime(num):
     """Тоог анхны тоо мөн эсэхийг шалгана."""
@@ -170,6 +187,49 @@ def is_prime(num):
 
 print(f"13 анхны тоо мөн үү? {is_prime(13)}")
 print(f"12 анхны тоо мөн үү? {is_prime(12)}")
+
+#ex21
+square = lambda x: x**2
+print(f"5-ын квадрат: {square(5)}")
+print(f"10-ын квадрат: {square(10)}")
+
+#ex22
+def reverse_list(items):
+    """Жагсаалтыг урвуу болгосон шинэ жагсаалт буцаана."""
+    return items[::-1]
+# TODO
+
+original_list = [10, 20, 30, 40, 50]
+reversed_list = reverse_list(original_list)
+print(f"Анхны жагсаалт: {original_list}")
+print(f"Урвуу жагсаалт: {reversed_list}")
+
+#ex23
+def find_student_score(student_name, scores_dict):
+    # TODO
+    if student_name in scores_dict:
+        return scores [student_name]
+    else:
+        return "Оюутан олдсонгүй"
+
+scores = {"Болд": 85, "Сарнай": 92, "Дорж": 78}
+print(f"Сарнайн дүн: {find_student_score('Сарнай', scores)}")
+print(f"Нараагийн дүн: {find_student_score('Нараа', scores)}")
+
+#ex24 
+def generate_fibonacci(n):
+    """Фибоначчийн эхний n гишүүнийг агуулсан жагсаалт буцаана."""
+    # TODO
+    sequence = [0, 1]
+
+    if n <=2:
+        return sequence[:n]
+    for n in range(2,n):
+        next_number = sequence[-1] + sequence[-2]
+        sequence.append(next_number)
+    return sequence
+
+print(f"Фибоначчийн эхний 10 гишүүн: {generate_fibonacci(10)}")
 
 #ex25
 def calculate(a, b, operator):
