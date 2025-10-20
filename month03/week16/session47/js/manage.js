@@ -212,3 +212,17 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(5));
+
+function texToNum(input) {
+  const n = Number(input);
+  if (Number.isNaN(n)) {
+    throw new TypeError("Тоо биш утга оруулсан байна!");
+  }
+  return n;
+}
+
+try {
+  console.log("Converted:", texToNum("123")); // 123
+} catch (err){
+    console.log("Алдаа:", err.message);
+}

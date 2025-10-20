@@ -7,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 main{
@@ -15,7 +16,7 @@ main{
 
 }
 
-/* navigation bar Selection */
+/* navigation bar Selection  */
 nav{
     display:flex;
     justify-content: space-between;
@@ -25,6 +26,43 @@ nav{
     background-color: #fff;
     box-shadow: 0 59px 16px 0 rgba(8, 128, 0, 0.00), 0 38px 15px 0 rgba(8, 128, 0, 0.01), 0 21px 13px 0 rgba(8, 128, 0, 0.02), 0 9px 9px 0 rgba(8, 128, 0, 0.04), 0 2px 5px 0 rgba(8, 128, 0, 0.04);}
 
+.navbar-left-side {
+  max-width: 217px;
+  max-height: 29px;
+  margin-left: 127px;
+}
+
+.navbar-left-side #name {
+  color: #75c310;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navbar-left-side #portfolio {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navbar-right-side {
+  margin-right: 127px;
+}
+
+.navbar-right-side ul {
+  display: flex;
+  max-width: 675px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 54.75px;
+}
+
 ul li {
     list-style: none;
     color: chartreuse;
@@ -32,9 +70,6 @@ ul li {
     font-size: 20px;
 }
 
-ul li a{
-    text-decoration: none;
-}
 .navbar-left-side{
     color: chartreuse;
     font-family: montserrat;
@@ -60,51 +95,135 @@ ul li a{
     justify-content: flex-start;
     width: 675px;
     gap: 32px;
-   
     padding-bottom: 8px;
+}
+/*button-green */
+.green_btn {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background: #75c310;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: bold;
 }
 
 /* creativity section */
 .creativity-section{
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 127px;;
 }
+
 
 .creativity-section .right-section img{ 
-    width: 300px;
-    height: auto;
+    width: 514px;
+    height: 513px;
     margin-left: 100px;
+    margin-top: 5px;
 }
 
-.creativity-section #creative {
+.bold-text {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-style: bold;
     font-size: 64px;
     max-width: 429px;
+    margin-top: 60px;
 }
 
-.creativity-section #expectation {
+.bold-text-center {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 64px;
+    width: 568px;
+    height: 156px;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.bold-text-right {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 64px;
+    width: 568px;
+    height: 156px;
+    margin-top: 110px;
+    text-align: right;
+}
+
+.normal-text-left {
     font-family: Poppins, sans-serif;
     font-weight: 500;
-    font-style: medium;
+    font-style: normal;
     font-size: 20px;
-    color: #0000;
+    color: #000;          
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.normal-text-right {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #000;          
     max-width: 312px;
-    margin-top: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: right;
 }
 
-.creativity-section a{
-    display: inline-block;
-    margin-top: 70px;
-    background: #75c310;
-    color: #fff;
-    text-decoration: none;
-    width: 220px;
-    height: 54px;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 54px;
-    text-align: center;
-    cursor: pointer;
+/* satisfaction section  2 дахь хэсэг эхэлж байна*/
+.satisfaction-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    margin: 0 127px;
+}
+
+.satisfaction-section .left-side img{
+    width: 554px;
+    height: 554px;
+    margin-left: 0px;
+}
+.satisfaction-section .right-side {
+    max-width: 429px;
+    margin-top: 60px;
+    margin: 5px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.satisfaction-section .right-side #satisfaction {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 64px;
+    max-width: 429px;
+    margin-top: 60px;
+}
+
+/* section happy cleints*/
+.happy-cleints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#stories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
