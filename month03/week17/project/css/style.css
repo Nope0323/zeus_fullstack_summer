@@ -10,7 +10,122 @@
     text-decoration: none;
 }
 main{
-    max-width: 1440px;
+    width:100vw;
     height: 100vh;
+    background-color:#080808;
+    
+}
+
+/* navigation bar Selection  */
+nav {
+    max-width: 1440px;
+    max-height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 70px;
+    background-color:#1B1B1B;
+    color: #9c9c9c;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0 60px;
+    
+}
+
+.navbar-left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-right-side{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.navbar-right-side img {
+    width: 30px;
+    height: auto;
+    gap: 30px;
+}
+
+.bold-white-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.white-text {
+    font-family: "IBM Plex Mono", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    color: #9c9c9c;          
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.left {
+    align-items: left;
+}
+
+.green_btn {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background: #3F8E00;
+    border-width:1px ;
+    border-color: #62BA1B;
+    border-style:solid ;
+    color: #fff;
+    padding: 12px 24px;
+    gap: 10px;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.about-me-section{
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.content-box00{
+    width: 492px;
+}
+
+.left-side-about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.right-side-about-me img{ 
+    width: 350px;
+    height: 350px;
+}
+.link-logo {
+
+    padding: 0 60px;
+}
+.link-logo img{
+    width: 160px;
+    height: 60px;
+    gap: 80px  ;
+    border-width:1px ;
 
 }
