@@ -118,6 +118,16 @@ nav {
     width: 350px;
     height: 350px;
 }
+
+.link-text{
+    display: flex;
+    justify-content:space-between;
+}
+
+.link-logo-image{
+    display: flex;
+    justify-content:space-between;
+}
 .link-logo {
 
     padding: 0 60px;
