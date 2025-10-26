@@ -213,6 +213,8 @@ function fibonacci(n) {
 
 console.log(fibonacci(5));
 
+
+console.log("ex21");
 function texToNum(input) {
   const n = Number(input);
   if (Number.isNaN(n)) {
@@ -221,8 +223,20 @@ function texToNum(input) {
   return n;
 }
 
+
 try {
   console.log("Converted:", texToNum("123")); // 123
 } catch (err){
     console.log("Алдаа:", err.message);
 }
+
+console.log ("ex22");
+function getDateTime(n){
+
+    const now = new Date();
+if (n<12) {
+}
+
+
+
+console.log(getDateTime(5));

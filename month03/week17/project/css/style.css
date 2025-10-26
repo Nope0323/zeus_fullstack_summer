@@ -72,6 +72,7 @@ nav {
     color: #9c9c9c;          
     margin-top: 40px;
     margin-bottom: 40px;
+    
 }
 
 .left {
@@ -119,19 +120,34 @@ nav {
     height: 350px;
 }
 
-.link-text{
-    display: flex;
-    justify-content:space-between;
-}
-
-.link-logo-image{
-    display: flex;
-    justify-content:space-between;
-}
-.link-logo {
-
+/* .logo-conteiner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+} */
+.display-max{
+    max-width: 1440px;
+    margin: 100px auto;
     padding: 0 60px;
 }
+.link-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+
+.link-logo-image {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+
+}
+
+
 .link-logo img{
     width: 160px;
     height: 60px;
