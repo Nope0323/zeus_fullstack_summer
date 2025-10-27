@@ -8,6 +8,3 @@ var myGreeting = {
 };
 greet(myGreeting);
 
-let name: string = "Boldoo";
-let age: number = 25;
-let isStudent: boolean= true; 
