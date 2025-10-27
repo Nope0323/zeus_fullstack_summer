@@ -232,12 +232,17 @@ try {
 
 console.log ("ex22");
 function getDateTime(n){
-
-    const now = new Date();
 if (n<12) {
+    console.log("Өглөө")
 }
-elif (n>=12 && n<18){}
-
+else if (n>=12 && n<18){
+    console.log("Өдөр")
+}
+else if (n<=18 && n<24){
+    console.log="Орой"
+}
+return n ;
+}
 
 
 
