@@ -225,7 +225,7 @@ function texToNum(input) {
 
 
 try {
-  console.log("Converted:", texToNum("123")); // 123
+  console.log("Converted:", texToNum("123")); 
 } catch (err){
     console.log("Алдаа:", err.message);
 }
@@ -239,11 +239,30 @@ else if (n>=12 && n<18){
     console.log("Өдөр")
 }
 else if (n<=18 && n<24){
-    console.log="Орой"
+    console.log("Орой")
 }
 return n ;
 }
 
-
-
 console.log(getDateTime(5));
+
+console.log("ex23")
+function session(n){
+    if(n===12 || n===1 ||n===2){
+        console.log("Өвөл")
+    }
+    else if (n>=3 && n<=5){
+        console.log("Хавар")
+    }
+    else if (n>=6 && n<=8){
+        console.log("Зун")
+    }
+    else if (n>=9 && n<=11){
+        console.log("Намар")
+    }
+    return n;
+}
+
+console.log(session(10));
+
+
