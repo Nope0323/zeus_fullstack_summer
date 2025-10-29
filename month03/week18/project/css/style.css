@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Heboo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+main{
+    max-width:100vw;
+    height: 100vh;
+    background-color:#f9f9f9;
+    
+}
+
+nav {
+    max-width: 1440px;
+    max-height: 70px;
+    display:flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    height: 70px;
+    background-color:#ffffff;
+    color: #000000;
+    padding: 0 30px; 
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* text */
+
+.big-text {
+    font-family: "Heboo", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #21243D;          
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: left; 
+}
+
+.normal-text {
+    font-family: "Heboo", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    color: #21243D;          
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: left; 
+}
+
+.left{
+    align-items: left;
+}
+
+
+.center{
+    align-items: center;
+}
+
+.right{
+    align-items: right;
+}
+/* button */
+.pink_btn {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background: #FF6464;
+    border-style:solid ;
+    color: #fff;
+    padding: 12px 24px;
+    gap: 10px;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: bold;
+}
+
+/* model-former */
+
+
+.right-former{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.left-former{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+.center-former{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-section{
+    max-width: 1440px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* display-max */
+.display-max{
+    max-width: 1440px;
+    padding: 0 80px;
+}
+/* text box */
+.text-box{
+    width: 492px;
+    height: 506;
+    padding: 0 80px;
+}
+
+.pink_btn {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background: #3F8E00;
+    border-width:1px ;
+    border-color: #62BA1B;
+    border-style:solid ;
+    color: #fff;
+    padding: 12px 24px;
+    gap: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.profile-section{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.profile-image profile01.png

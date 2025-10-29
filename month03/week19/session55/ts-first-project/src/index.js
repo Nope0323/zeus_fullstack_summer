@@ -6,7 +6,5 @@ var myGreeting = {
     name: "TypeScript"
 };
 greet(myGreeting);
-var myName = "Boldoo";
-var age = 25;
-var isStudent = true;
-var count = "ten";
+
+
