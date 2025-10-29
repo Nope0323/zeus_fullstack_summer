@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book List</title>
-</head>
+
     body{
         font-family:
         max_with:800px;
         margin:auto;
-        padding
+        padding:20px;
     }
+    h1{
+        color:#333;
 
-    
+    }
+    .book {
+        border:1px solid #ddd;
+
+    }
+</head>
+<body>
+    <h1> the books in linbrary</h1>
+    <hr>
+    {%for book in book_key%}
+        <div class="book">
+            
+        </div>
+    {% for book in book_key%}
+    {%empty%}
+    <p>No book is registered</p>
+    {%endfor%}
 </body>
 </html>
