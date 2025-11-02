@@ -66,5 +66,4 @@ for(let i = 0; i< mongolianNationSports.length; i++){
     nationalSportListUl.appendChild(liElement);
 }
 
-main.appendChild(nationSportSection
-);
+main.appendChild(nationSportSection);

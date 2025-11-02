@@ -265,4 +265,40 @@ function session(n){
 
 console.log(session(10));
 
+console.log("ex24");
+function isPalindrome(word){
+    let length = word.length;
+    for (let i = 0; i < length/2 ;i++){
+        if(word [i] !==word[length-1-i]){
+            return false;   
+        }
+    }
+    return false;
+}
 
+console.log(isPalindrome(121));
+
+
+console.log("ex25");
+function toRoman(n){
+    const map = [
+        { value: 1000, symbol: "M" },
+        { value: 900,  symbol: "CM" },
+        { value: 500,  symbol: "D" },
+        { value: 400,  symbol: "CD" },
+        { value: 100,  symbol: "C" },
+        { value: 90,   symbol: "XC" },
+        { value: 50,   symbol: "L" },
+        { value: 40,   symbol: "XL" },
+        { value: 10,   symbol: "X" },
+        { value: 9,    symbol: "IX" },
+        { value: 5,    symbol: "V" },
+        { value: 4,    symbol: "IV" },
+        { value: 1,    symbol: "I" },
+    ];
+    let list="";
+    list= map.length;
+    if 
+}
+
+console.log(toRoman(23))
