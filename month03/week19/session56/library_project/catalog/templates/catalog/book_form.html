@@ -52,9 +52,11 @@
 </head>
 <body>
     <h1>Шинэ ном нэмэх</h1>
-    <form menthod="POST">
-        { % csrf_token % }
+    <form method="POST">
+        {% csrf_token %}
+
         {{form.as_p}}
+
         <button type="submit">Хадгалах</button>
     </form>
     <br>

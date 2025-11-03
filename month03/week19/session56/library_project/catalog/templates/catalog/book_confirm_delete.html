@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Delete</title>
+</head>
+<Style>
+    body{
+        font-family: sans-serif;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+    }
+    h1{
+        color:#911717;
+    }
+    .confirm-box{
+        border:1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .confirm-actions{ 
+        margin-top:20px;
+    }
+    .delete-btn:hover{
+        background-color: darkred;
+    }
+    .cancel-link{
+        display: inline-block;
+        margin-left: 10px;
+        text-decoration: none;
+        color: blue;
+    }
+
+</Style>
+<body>
+    <div class="confirm-box">
+        <h1>Approve Delete</h1>
+        <p>
+            You:
+            <strong>"{{book.title}}"</strong>
+            wanna delete the book?
+        </p>
+        <p>
+            It cannot be resumed.
+        </p>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="confirm-actions">
+                <button type="submit" class="delete-btn"> Yes , delete
+            </button>
+                <a href="{% url 'book_list' %}" class="cancel-link">Cancel</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
