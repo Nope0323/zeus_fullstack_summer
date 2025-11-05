@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirm Delete</title>
+    <title>Арилгах баталгаажуулалт</title>
+    <link rel="stylesheet" href="{% 'catalog/styles.css' %}">
+    <style>
+        body{
+            font-family: sans-serif;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1{
+            color:#911717;
+        }
+        .confirm-box{
+            border:1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .confirm-actions{ 
+            margin-top:20px;
+        }
+        .delete-btn {
+            background-color:red;
+            color: white;
+        }
+        .delete-btn:hover{
+            background-color: #d02a3b;
+        }
+        /* .cancel-link{
+            display: inline-block;
+            margin-left: 10px;
+            text-decoration: none;
+            color: #007bff;
+        } */
+        .cancel-btn {
+            background-color:blue;
+            color: white;
+        }
+        .cancel-btn:hover{
+            background-color: #2c61f4;
+        }
+    </style>
 </head>
-<Style>
-    body{
-        font-family: sans-serif;
-        max-width: 500px;
-        margin: auto;
-        padding: 20px;
-    }
-    h1{
-        color:#911717;
-    }
-    .confirm-box{
-        border:1px solid #ddd;
-        padding: 20px;
-        border-radius: 5px;
-    }
-    .confirm-actions{ 
-        margin-top:20px;
-    }
-    .delete-btn:hover{
-        background-color: darkred;
-    }
-    .cancel-link{
-        display: inline-block;
-        margin-left: 10px;
-        text-decoration: none;
-        color: blue;
-    }
-
-</Style>
 <body>
     <div class="confirm-box">
-        <h1>Approve Delete</h1>
+        <h1>Арилгах баталгаажуулалт</h1>
         <p>
-            You:
-            <strong>"{{book.title}}"</strong>
-            wanna delete the book?
+            Та:
+            <strong>"{{book.title}}"</strong>нэртэй номыг устгахдаа итгэлтэй байна уу?
         </p>
         <p>
-            It cannot be resumed.
+            Энэ нь сэргээгдэхгүй.
         </p>
         <form method="POST">
             {% csrf_token %}
             <div class="confirm-actions">
-                <button type="submit" class="delete-btn"> Yes , delete
+                <button type="submit" class="delete-btn"> Тийм , устгах
             </button>
-                <a href="{% url 'book_list' %}" class="cancel-link">Cancel</a>
+                <a type="button" href='{% url "book_list" %}' class="cancel-btn">Цуцлах</a>
+
             </div>
         </form>
     </div>

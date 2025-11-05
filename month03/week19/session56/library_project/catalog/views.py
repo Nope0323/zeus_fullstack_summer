@@ -22,6 +22,17 @@ def create_book(request):
             form = BookForm()
     return render (request,'catalog/book_form.html',{'form':form})
 
+def book_update(request, pk):
+        book = get_object_or_404(Book , pk = pk)
+
+        form = BookForm(request.POST, instance=book)
+        if form.is_valid():
+            form.save()
+            return redirect('book_list') 
+        else:
+            form = BookForm(instance=book)
+        return render(request, 'catalog/book_form.html', {'form': form})
+
 def update_book(request, pk):
     book = get_object_or_404(Book, pk = pk)
 
@@ -35,7 +46,7 @@ def update_book(request, pk):
     return render(request, 'catalog/book_form.html', {'form': form})
 
 def delete_book(request, pk):
-    book = get_object_or_404(Book, pk=pk)
+    book = get_object_or_404(Book, pk = pk)
 
     if request.method == 'POST':
         book.delete()
@@ -60,14 +71,3 @@ def book_create(request):
         else:
             form = BookForm()
     return render (request,'catalog/book_form.html',{'form':form})
-
-def book_update(request, pk):
-    book = get_object_or_404(Book , pk = pk)
-
-    form = BookForm(request.POST, instance=book)
-    if form.is_valid():
-        form.save()
-        return redirect('book_list') 
-    else:
-        form = BookForm(isinstance=book)
-    return render(request, 'catalog/book_form.html', {'form': form})

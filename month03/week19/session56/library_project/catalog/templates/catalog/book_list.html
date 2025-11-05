@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book List</title>
+    <title>Номын жагсаалт</title>
     <style>
 
     body{
@@ -16,12 +16,12 @@
         color:#333;
 
     }
-    .book {
+    /* .book {
         border:1px solid #ddd;
         padding:  10px 15px;
         margin-bottom: 10px;
         border-radius: 5px;
-    }
+    } */
     .book h3{
         margin: 0;
     }
@@ -36,6 +36,29 @@
         margin-left: 5px;
         color: white;
 
+    }
+    .book-info h3 { margin: 0; }
+    .book-info p { color: #555; margin: 5px 0 0 0; }
+    /* --- ШИНЭ STYLE (Үйлдлийн холбоосууд) --- */
+    .book-actions a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        margin-left: 5px;
+        color: white;
+    }
+    .edit-link { background-color: #ffc107; } /* Шар */
+    .edit-link:hover { background-color: #e0a800; }
+    
+    .book {
+        border: 1px solid #ddd;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        /* --- ШИНЭ STYLE --- */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .edit-link{
         background-color: orange;
@@ -55,27 +78,28 @@
     </style>
 </head>
 <body>
-    <h1> the books in linbrary</h1>
+    <h1>Манай номын санд байгаа номууд</h1>
     <hr>
     {% for book in books_key %}
         <div class="book">
-            <h3>
-                {{book.title}}
-            </h3>
-            <p>
-                Author Name: {{book.author_name}}
-            </p>
+            <div class="book-info"> 
+
+                <h3>{{book.title}}</h3>
+                <p>Зохиолч: {{book.author_name}}</p>
+
+            </div> 
+
         </div>
         <div class="book-actions">
             <a href="{% url 'book_update' book.pk %}" class="edit-link">
-                Edit
+                Заварлах
             </a>
             <a href="{% url 'book_delete' book.pk %}" class="delete-link">
-                Delete
+                Арилгах
             </a>
         </div>
     {% empty %}
-    <p>No book is registered</p>
+    <p>Одоогоор ном бүртгэгдээгүй байна</p>
     {% endfor %}
 </body>
 </html>
