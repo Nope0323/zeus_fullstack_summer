@@ -16,12 +16,17 @@
         color:#333;
 
     }
-    /* .book {
-        border:1px solid #ddd;
-        padding:  10px 15px;
-        margin-bottom: 10px;
+    
+    .book {
+        border: 1px solid #ddd;
+        padding: 10px 15px;
+        margin-bottom: 15px;
         border-radius: 5px;
-    } */
+        /* --- ШИНЭ STYLE --- */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .book h3{
         margin: 0;
     }
@@ -35,14 +40,15 @@
         border-radius: 3px;
         margin-left: 5px;
         color: white;
-
     }
     .book-info h3 { margin: 0; }
     .book-info p { color: #555; margin: 5px 0 0 0; }
+    
     /* --- ШИНЭ STYLE (Үйлдлийн холбоосууд) --- */
+
     .book-actions a {
         text-decoration: none;
-        padding: 5px 10px;
+        padding: 5px 15px;
         border-radius: 3px;
         margin-left: 5px;
         color: white;
@@ -50,16 +56,6 @@
     .edit-link { background-color: #ffc107; } /* Шар */
     .edit-link:hover { background-color: #e0a800; }
     
-    .book {
-        border: 1px solid #ddd;
-        padding: 10px 15px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        /* --- ШИНЭ STYLE --- */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     .edit-link{
         background-color: orange;
         border-radius: 7px;
@@ -83,12 +79,9 @@
     {% for book in books_key %}
         <div class="book">
             <div class="book-info"> 
-
                 <h3>{{book.title}}</h3>
                 <p>Зохиолч: {{book.author_name}}</p>
-
             </div> 
-
         </div>
         <div class="book-actions">
             <a href="{% url 'book_update' book.pk %}" class="edit-link">

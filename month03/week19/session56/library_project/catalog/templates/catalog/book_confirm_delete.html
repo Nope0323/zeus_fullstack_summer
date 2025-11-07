@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Арилгах баталгаажуулалт</title>
-    <link rel="stylesheet" href="{% 'catalog/styles.css' %}">
     <style>
         body{
             font-family: sans-serif;
@@ -30,19 +29,19 @@
         .delete-btn:hover{
             background-color: #d02a3b;
         }
-        /* .cancel-link{
+        .cancel-link{
             display: inline-block;
             margin-left: 10px;
             text-decoration: none;
             color: #007bff;
-        } */
-        .cancel-btn {
+        } 
+        /* .cancel-btn {
             background-color:blue;
             color: white;
         }
         .cancel-btn:hover{
             background-color: #2c61f4;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -58,13 +57,10 @@
         <form method="POST">
             {% csrf_token %}
             <div class="confirm-actions">
-                <button type="submit" class="delete-btn"> Тийм , устгах
-            </button>
-                <a type="button" href='{% url "book_list" %}' class="cancel-btn">Цуцлах</a>
-
+                <button type="submit" class="delete-btn"> Тийм , устгах</button>
+                <a type="button" href='{% url "book_list" %}' class="cancel-link">Цуцлах</a>
             </div>
         </form>
     </div>
-    
 </body>
 </html>
