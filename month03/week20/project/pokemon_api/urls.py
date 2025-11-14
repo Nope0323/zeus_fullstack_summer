@@ -1,7 +1,6 @@
-from django.urls import path
+from django.utils import path
 from . import views
 
 urlpatterns = [
-    path('', views.pokemon_list, name='pokemon_list'),
+    path('pokemon/', views.pokemon_list, name='pokemon_list'),
 ]
-
