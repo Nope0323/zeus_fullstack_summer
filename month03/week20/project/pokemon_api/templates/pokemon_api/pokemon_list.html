@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokedex</title>
+    
     <style>
+         #myInput {
+            width: 200px;
+            padding: 8px;
+            margin: 10px 0;
+            font-size: 16px;
+            }
 
     </style>
 </head>
 <body>
     <h1>Pokemon List</h1>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+    <button onclick="myFunction()">Хайх</button>
+
     <script>
-        const POKEMKON_URL =  'https://pokeapi.co/api/v2/pokemon/?limit=60&offset=60'
+        const POKEMON_URL =  'https://pokeapi.co/api/v2/pokemon/?limit=60&offset=60'
+        function myFunction() {
+        let text = document.getElementById("myInput").value;
+        alert("Хайж буй үг: " + text);
+    }
     </script>
 </body>
 </html>

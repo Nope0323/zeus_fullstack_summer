@@ -1,0 +1,1 @@
+console.log("TypeScript-ээс мэндчилье! 🚀 ");function o(){const e=document.querySelector("h1");e&&(e.style.color="blue",console.log("<h1> тагийг олж, өнгийг нь цэнхэр болголоо."))}document.addEventListener("DOMContentLoaded",o);

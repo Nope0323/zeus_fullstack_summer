@@ -1,3 +1,4 @@
+
 let number = 5;
 if (number>0){
         console.log("эерэг тоо");
@@ -279,26 +280,45 @@ function isPalindrome(word){
 console.log(isPalindrome(121));
 
 
-console.log("ex25");
-function toRoman(n){
-    const map = [
-        { value: 1000, symbol: "M" },
-        { value: 900,  symbol: "CM" },
-        { value: 500,  symbol: "D" },
-        { value: 400,  symbol: "CD" },
-        { value: 100,  symbol: "C" },
-        { value: 90,   symbol: "XC" },
-        { value: 50,   symbol: "L" },
-        { value: 40,   symbol: "XL" },
-        { value: 10,   symbol: "X" },
-        { value: 9,    symbol: "IX" },
-        { value: 5,    symbol: "V" },
-        { value: 4,    symbol: "IV" },
-        { value: 1,    symbol: "I" },
-    ];
-    let list="";
-    list= map.length;
-    if 
+// console.log("ex25");
+// function toRoman(n){
+//     const map = [
+//         { value: 1000, symbol: "M" },
+//         { value: 900,  symbol: "CM" },
+//         { value: 500,  symbol: "D" },
+//         { value: 400,  symbol: "CD" },
+//         { value: 100,  symbol: "C" },
+//         { value: 90,   symbol: "XC" },
+//         { value: 50,   symbol: "L" },
+//         { value: 40,   symbol: "XL" },
+//         { value: 10,   symbol: "X" },
+//         { value: 9,    symbol: "IX" },
+//         { value: 5,    symbol: "V" },
+//         { value: 4,    symbol: "IV" },
+//         { value: 1,    symbol: "I" },
+//     ];
+//     let list="";
+//     list= map.length;
+//     if 
+// }
+
+// console.log(toRoman(23))
+console.log("ex28");
+function countWord(n){
+    const word = n.trim().split(/\s+/); 
+    const freq = {};
+
+    for (let w of word) {
+        if (freq[w]) {
+            freq[w] += 1;
+        } else {
+            freq[w] = 1;
+        }
+    }
+
+    return freq;   
 }
 
-console.log(toRoman(23))
+console.log(countWord("hello world hello"));
+
+
