@@ -163,17 +163,6 @@ function sumDigits(n){
 
 console.log(sumDigits(123)); 
 
-//ex18
-
-//def is_prime(num):
-//    """Тоог анхны тоо мөн эсэхийг шалгана."""
-//    if num < 2:
-//        return False
-//    for i in range(2, num // 2 + 1):
-//        if num % i == 0:
-//            return False
-//    return True
-
 console.log("ex18");
 function isPrime(n){
     if (n<2){

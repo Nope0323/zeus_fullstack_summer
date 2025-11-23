@@ -1,9 +1,11 @@
-console.log("TypeScript-ээс мэндчилье! 🚀 ");
-function main() {
-const header = document.querySelector('h1');
-if (header) {
-header.style.color = 'blue';
-console.log('<h1> тагийг олж, өнгийг нь цэнхэр болголоо.');
+async function loadPokemon() {
+  const res = await fetch("/api/pokemon/");
+  const data = await res.json();
+
+  const list = document.getElementById("list");
+  list!.innerHTML = data.map((p: any) =>
+    `<div>${p.name} — ${p.type.join(", ")}</div>`
+  ).join("");
 }
-}
-document.addEventListener('DOMContentLoaded', main);
+
+loadPokemon();
