@@ -1,1 +1,1 @@
-async function e(){const t=await(await fetch("/api/pokemon/")).json(),o=document.getElementById("list");o.innerHTML=t.map(n=>`<div>${n.name} — ${n.type.join(", ")}</div>`).join("")}e();
+async function i(e=""){const a=e?`/api/pokemon/?search=${encodeURIComponent(e)}`:"/api/pokemon/",s=await(await fetch(a)).json(),t=document.getElementById("list");t&&(t.innerHTML=s.map(o=>`<div>${o.name} — ${o.type.join(", ")}</div>`).join(""))}i();const n=document.getElementById("myInput");n&&n.addEventListener("keyup",()=>{i(n.value)});
