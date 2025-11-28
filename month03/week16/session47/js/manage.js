@@ -308,6 +308,8 @@ function countWord(n){
     return freq;   
 }
 
-console.log(countWord("hello world hello"));
+// console.log(countWord("hello world hello"));
 
 
+// console.log("ex29");
+// function

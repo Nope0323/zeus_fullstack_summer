@@ -18,4 +18,3 @@ def pokemon_api(request):
     } for p in qs]
 
     return JsonResponse(data, safe=False)
-
