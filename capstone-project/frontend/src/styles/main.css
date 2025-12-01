@@ -1,16 +1,42 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #F4F5F7 ;
+}
+
+.sidebar--left {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 280px;
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+  padding:24px;
+  background: white;
+  background:#FFFFFF;
+  border:1px;
+  border-color:#EEEEEE ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 100 ;
 }
 
 .header {
-  width: 100%;
+  top:0;
+  left:0;
+  right: 0;
+  height: 100px;
+  margin-left: 280px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
-  background: white;
+  padding: 0px 24px;
+  background:#FFFFFF;
+  border:1px;
+  border-color:#EEEEEE ;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 100;
 }
 
 /* LEFT SECTION */
@@ -58,6 +84,7 @@ body {
 .bell {
   font-size: 20px;
   cursor: pointer;
+  
 }
 
 .avatar {
@@ -67,3 +94,196 @@ body {
   object-fit: cover;
   cursor: pointer;
 }
+/* menu-sidebar */
+.menu-items{
+  padding-top: 24;
+  padding-right: 24;
+  padding-bottom: 24;
+  padding-left: 24;
+}
+/* items= icon+texts */
+.dashboard-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 18px;
+  color: #000000; 
+  cursor: pointer;
+  
+}
+
+.dashboard-item svg {
+  stroke: #000000;
+}
+
+.Inventory-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 18px;
+  color: #000000; 
+  cursor: pointer;
+}
+
+.Inventory-item svg {
+  stroke: #000000;
+}
+
+.Reports-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 18px;
+  color: #000000; 
+  cursor: pointer;
+}
+
+.Reports-item svg {
+  stroke: #000000;
+}
+
+.Suppliers-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 18px;
+  color: #000000; 
+  cursor: pointer;
+}
+
+.Suppliers-item svg {
+  stroke: #000000;
+}
+
+.Orders-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 18px;
+  color: #000000; 
+  cursor: pointer;
+}
+
+.Orders-item svg {
+  stroke: #000000;
+}
+
+.ManageStore-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 18px;
+  color: #000000; 
+  cursor: pointer;
+}
+
+.ManageStore-item svg {
+  stroke: #000000;
+}
+
+.Settings-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 18px;
+  color: #000000; 
+  cursor: pointer;
+}
+
+.Settings-item {
+  stroke: #000000;
+}
+
+.LogOut-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 16px;
+  color: #000000; 
+  cursor: pointer;
+}
+
+.LogOut-item {
+  stroke: #000000;
+}
+/* link хэсэгт  */
+.dashboard-link {
+  text-decoration: none;   
+  color: #000000;          
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.inventory-link {
+  text-decoration: none;   
+  color: #000000;          
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reports-link {
+  text-decoration: none;   
+  color: #000000;          
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.suppliers-link {
+  text-decoration: none;   
+  color: #000000;          
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+.orders-link {
+  text-decoration: none;   
+  color: #000000;          
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+.manageStore-link {
+  text-decoration: none;   
+  color: #000000;          
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+.settings-link {
+  text-decoration: none;   
+  color: #000000;          
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.salesOverview{
+width:690px ;
+height: 163px;
+margin-bottom: 30px;
+margin-left:  30px; 
+margin-top: 30px;
+margin-right: 30px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 8px 24px;
+background:#FFFFFF;
+border:1px;
+border-color:#EEEEEE ;
+box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+z-index: 100;
+}
+
