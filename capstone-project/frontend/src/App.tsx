@@ -80,20 +80,23 @@ function App() {
       </aside>
       <main>
         
-  <div className="card">
+  <div className="  sales">
       <h2>Sales Overview</h2>
-      {/* Sales content */}
   </div>
 
-  <div className="card">
+  <div className="sales">
       <h2>Purchase Overview</h2>
       {/* Purchase content */}
   </div>
 
-  {/* Дахин олон card нэмж болно */}
-  <div className="card">
-      <h2>New Overview</h2>
+  <div className="sales">
+      <h2>Sale Purchase</h2>
   </div>
+
+  <div className=" summary">
+      <h2>Invertory Summary </h2>
+  </div>
+
       </main>
     </>
   );

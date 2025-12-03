@@ -1,4 +1,4 @@
-#!/home/boldoo/projects/zeus_fullstack_summer/capstone-project/backend/.venv/bin/python3
+#!/Users/zeus/Desktop/zeus_fullstack_summer/capstone-project/backend/.venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
