@@ -1,0 +1,22 @@
+# --- PYTHON ---
+venv/
+.venv/
+*/__pycache__/
+*.pyc
+
+# Django
+*.sqlite3
+*.log
+
+# --- NODE ---
+node_modules/
+dist/
+build/
+
+# --- OS FILES ---
+.DS_Store
+*~
+.cache/
+
+# --- ENV FILES ---
+.env
