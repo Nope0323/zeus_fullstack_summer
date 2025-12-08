@@ -6,6 +6,7 @@ interface ProductListProps {
   error: string | null;
 }
 const ProductList = ({ products, loading, error }: ProductListProps) => {
+  console.log("from ProductList")
   if (loading) {
     return <div className="loading">Уншиж байна...</div>;
   }
@@ -15,10 +16,13 @@ const ProductList = ({ products, loading, error }: ProductListProps) => {
   if (products.length === 0) {
     return <div className="no-products">Бүтээгдэхүүн олдсонгүй</div>;
 }
+
   return (
     <div className="product-grid">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
-))} </div>
-); };
+      ))}
+    </div>
+  );
+};
 export default ProductList;

@@ -1,3 +1,4 @@
+// src/components/CategoryFilter.tsx
 import type { Category } from '../types';
 interface CategoryFilterProps {
   categories: Category[];
@@ -14,22 +15,22 @@ const CategoryFilter = ({
       <h3>Ангилал</h3>
       <div className="category-buttons">
         <button
-          className={`category-btn ${selectedCategory === null ? 'active' : ''}`}
+          className={`category-btn ${selectedCategory === null ? 'active': ''}`}
           onClick={() => onSelectCategory(null)}
-        >
-          Бүгд
-        </button>
-        {categories.map((category) => (
-          <button
-            key={category.id}
-            className={`category-btn ${selectedCategory === category.id ? 'active' : ''}`}
-            onClick={() => onSelectCategory(category.id)}
           >
-            {category.name}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-};
-export default CategoryFilter;
+            Бүгд
+            </button>
+            {categories.map((category) => (
+              <button
+              key={category.id}
+              className={`category-btn ${selectedCategory === category.id ? 'active' : ''}`}
+              onClick={() => onSelectCategory(category.id)}
+              >
+                {category.name}
+                </button>
+                ))}
+                </div>
+                </div>
+                );
+                };
+                export default CategoryFilter;
