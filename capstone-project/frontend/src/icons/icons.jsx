@@ -1,5 +1,5 @@
 
-export const DashboardIcon = ({ size = 28, color = "#1d4ed8" }) => (
+export const DashboardIcon = ({ size = 28, color = "#000000ff" }) => (
     <svg
     width={size}
     height={size}
@@ -14,7 +14,7 @@ export const DashboardIcon = ({ size = 28, color = "#1d4ed8" }) => (
     </svg>
   );
   // REPORTS ICON
-  export const ReportsIcon = ({ size = 28, color = "#4b5563" }) => (
+  export const ReportsIcon = ({ size = 28, color = "#000000ff" }) => (
       <svg 
       width={size}
       height={size}
@@ -28,7 +28,7 @@ export const DashboardIcon = ({ size = 28, color = "#1d4ed8" }) => (
     </svg>
   );
   // Inventory ICON
-  export const InventoryIcon = ({ size = 28, color = "#221111" }) => (
+  export const InventoryIcon = ({ size = 28, color = "#000000ff" }) => (
     <svg 
       width={size}
       height={size}
@@ -45,7 +45,7 @@ export const DashboardIcon = ({ size = 28, color = "#1d4ed8" }) => (
   
   
   //ManageStore ICON
-  export const ManageStoreIcon = ({ size = 28, color = "#4b5563" }) => (
+  export const ManageStoreIcon = ({ size = 28, color = "#000000ff" }) => (
     <svg 
     width={size}
     height={size}
@@ -62,7 +62,7 @@ export const DashboardIcon = ({ size = 28, color = "#1d4ed8" }) => (
   
   
   //Orders ICON
-  export const OrdersIcon = ({ size = 28, color = "#4b5563" }) => (
+  export const OrdersIcon = ({ size = 28, color = "#000000ff" }) => (
     <svg 
       width={size}
       height={size}
@@ -78,7 +78,7 @@ export const DashboardIcon = ({ size = 28, color = "#1d4ed8" }) => (
   );
   
   // HOME ICON
-  export const HomeIcon = ({ size = 28, color = "#000" }) => (
+  export const HomeIcon = ({ size = 28, color = "#000000ff" }) => (
       <svg 
       width={size}
       height={size}
@@ -93,20 +93,21 @@ export const DashboardIcon = ({ size = 28, color = "#1d4ed8" }) => (
   
   
   // notification ICON
-  export const NotificationIcon = ({ size = 22, color = "black" }) => (
-    <svg 
-    fill="none"
+ export const NotificationIcon = ({ size = 24, color = "#000" }) => (
+  <svg
     width={size}
     height={size}
     viewBox="0 0 24 24"
-    stroke={color}
-    >
-      <path d="M12 24c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.1-1.6-5.6-4.5-6.3V6c0-.8-.7-1.5-1.5-1.5S10.5 5.2 10.5 6v.7C7.6 7.4 6 9.9 6 13v5l-2 2v1h16v-1l-2-2z" />
-    </svg>
-  );
+    fill={color}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M12.022 2c-2.188 0-4.1 1.778-4.1 3.966v2.676c-1.012.447-1.8 1.501-1.8 2.698v3.4l-.9 1.8v.9h14v-.9l-.9-1.8v-3.4c0-1.197-.788-2.251-1.8-2.698v-2.676c0-2.188-1.912-3.966-4.1-3.966zm0 20.4c1.327 0 2.4-1.07 2.4-2.4h-4.8c0 1.33 1.073 2.4 2.4 2.4z" />
+  </svg>
+);
+
   
   // SETTINGS ICON
-  export const SettingsIcon = ({ size = 28, color = "#000" }) => (
+  export const SettingsIcon = ({ size = 28, color = "#000000ff" }) => (
       <svg 
       width={size}
       height={size}
@@ -123,7 +124,7 @@ export const DashboardIcon = ({ size = 28, color = "#1d4ed8" }) => (
   );
   
   // USER AVATAR ICON (sidebar-д ашиглагддаг)
-  export const UserCircleIcon = ({ size = 28, color = "#000" }) => (
+  export const UserCircleIcon = ({ size = 28, color = "#000000ff" }) => (
       <svg 
       width={size}
       height={size}

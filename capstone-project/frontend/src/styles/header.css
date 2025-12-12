@@ -1,0 +1,32 @@
+.header {
+  margin-top:0;
+  left:0;
+  right: 0;
+  height: 100px;
+  margin-left: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 24px;
+  background:#FFFFFF;
+  border:1px;
+  border-color:#EEEEEE ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 100;
+} 
+
+.search {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #f8f8f8;
+  outline: none;
+  font-size: 14px;
+}  
+.user-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
