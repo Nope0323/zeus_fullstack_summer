@@ -4,6 +4,9 @@
 }
  .sidebar-left {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top:0;
   left:0;
   width: 280px;
@@ -11,9 +14,6 @@
   padding:24px;
   background: white;
   border:1px solid #eee;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   opacity: 1;
 }
 
@@ -34,6 +34,18 @@
   color: #000000; 
   cursor: pointer;
 }
+.menu-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  font-size: 18px;
+  color: #000000; 
+  cursor: pointer;
+}
+
+/* items= icon+texts */
+
 .sidebar-item svg {stroke: #000000; flex-shrink: 0;}
 
 .sidebar-link {
