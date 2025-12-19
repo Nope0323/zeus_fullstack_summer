@@ -35,8 +35,8 @@ export default function Sidebar() {
           </div>
 
           <div className="menu-item">
-          <OrdersIcon />
-          <a href="/dashboard" className="sidebar-link">Orders</a>
+            <OrdersIcon />
+            <a href="/dashboard" className="sidebar-link">Orders</a>
           </div>
 
           <div className="menu-item">

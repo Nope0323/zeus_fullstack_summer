@@ -17,22 +17,37 @@ function App() {
       <Sidebar />
       <main>
         
-  <div className="  sales">
+  <div className="sales">
       <h2>Sales Overview</h2>
   </div>
 
+  <div className=" summary">
+      <h2>Inventory Summary</h2>
+  </div>
+  
   <div className="sales">
       <h2>Purchase Overview</h2>
-      {/* Purchase content */}
+  </div>
+  <div className="summary">
+      <h2>Product Summary</h2>
   </div>
 
-  <div className="sales">
+  <div className="graph">
       <h2>Sale Purchase</h2>
   </div>
 
   <div className=" summary">
-      <h2>Invertory Summary </h2>
+      <h2>Order Summary</h2>
   </div>
+
+  <div className="sales">
+      <h2>Top Selling Stock</h2>
+  </div>
+
+  <div className="summary">
+      <h2>Low Quantity Stock</h2>
+  </div>
+
 
       </main>
     </>
