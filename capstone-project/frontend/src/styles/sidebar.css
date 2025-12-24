@@ -1,94 +1,56 @@
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
- /* .sidebar-left {
-  position: fixed;
-  width: 280px;
-  height: 100vh;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  top:0;
-  left:0;
-  padding:24px;
-  background: white;
-  border:1px solid #eee;
-  opacity: 1; 
-} */
-/*  
-  .sidebar-left {
-    width: 140px;
-  }
-  .main-content {
-    margin-left: 72px;
-  }
-} */
-.sidebar-left{
+
+.sidebar-left {
   width: 280px;
   height: 100vh;
 
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto);
-  align-content: start ;
+  grid-template-rows: auto 1fr auto; 
+  align-content: start;
 
   background: white;
-  border:1px solid #eee;
-  opacity: 1;
-  top:0;
-  left:0;
-
-  grid-gap: 50px;
-  /* grid: column gap 50px; ; */
-  justify-content: space-between;
-  align-items: center;
+  border-right: 1px solid #eee;
 }
-
-@media (max-width: 768px) {
-  .sidebar-left {
-    width: 72px;
-    padding: 16px;
-  }
+.menu-items {
+  display: grid;
+  row-gap: 16px;
+  padding: 24px;
 }
-
-
-/* menu-sidebar */
-.menu-items{
-  padding-top: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
-  padding-left: 24px;
-}
-/* items= icon+texts */
+.menu-item,
 .sidebar-item {
   display: flex;
   align-items: center;
   gap: 12px;
+
   padding: 10px 4px;
-  font-size: 18px;
-  color: #000000; 
-  cursor: pointer;
-}
-.menu-item{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 4px;
-  font-size: 18px;
-  color: #000000; 
+  font-size: 16px;
+  color: #000;
   cursor: pointer;
 }
 
-/* items= icon+texts */
-
-.sidebar-item svg {stroke: #000000; flex-shrink: 0;}
-
+.sidebar-item svg {
+  flex-shrink: 0;
+  stroke: #000;
+}
 .sidebar-link {
-  text-decoration: none;   
-  color: #000000;          
-  font-family: Inter;
+  text-decoration: none;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
+}
 
+
+
+@media (max-width: 768px) {
+  .sidebar-left {
+    width: 72px;
+  }
+
+  .sidebar-link {
+    display: none; /* icon-only */
+  }
 }

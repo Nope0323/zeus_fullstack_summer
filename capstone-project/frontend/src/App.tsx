@@ -12,40 +12,43 @@ function App() {
           rel="stylesheet"
         />
       </Helmet>
-      <div>
 
-        <Sidebar />
-        <Header />
-        <main>
-          <div className="sales">
-            <h2>Sales Overview</h2>
-          </div>
+      <div className="layout-container">
+        <Sidebar style={{ gridArea: "sidebar" }} />
+        <Header style={{ gridArea: "header" }} />
+        <main  style={{ gridArea: "main" }} >
+          <div className="main-content">
+            
+            <div className="sales">
+              <h2>Sales Overview</h2>
+            </div>
 
-          <div className="summary">
-            <h2>Inventory Summary</h2>
-          </div>
+            <div className="summary">
+              <h2>Inventory Summary</h2>
+            </div>
 
-          <div className="sales">
-            <h2>Purchase Overview</h2>
-          </div>
-          <div className="summary">
-            <h2>Product Summary</h2>
-          </div>
+            <div className="sales">
+              <h2>Purchase Overview</h2>
+            </div>
+            <div className="summary">
+              <h2>Product Summary</h2>
+            </div>
 
-          <div className="graph-sale">
-            <h2>Sale Purchase</h2>
-          </div>
+            <div className="graph-sale">
+              <h2>Sale Purchase</h2>
+            </div>
 
-          <div className="graph-summary">
-            <h2>Order Summary</h2>
-          </div>
+            <div className="graph-summary">
+              <h2>Order Summary</h2>
+            </div>
 
-          <div className="graph-sale">
-            <h2>Top Selling Stock</h2>
-          </div>
+            <div className="graph-sale">
+              <h2>Top Selling Stock</h2>
+            </div>
 
-          <div className="graph-summary">
-            <h2>Low Quantity Stock</h2>
+            <div className="graph-summary">
+              <h2>Low Quantity Stock</h2>
+            </div>
           </div>
         </main>
       </div>
